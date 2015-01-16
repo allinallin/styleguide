@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* This file contains styles specific to the style guide */
 @font-face { font-family: "knewcons"; src: url("../fonts/knewcons.eot"); src: url("../fonts/knewcons.eot?#iefix") format("embedded-opentype"), url("../fonts/knewcons.woff") format("woff"), url("../fonts/knewcons.ttf") format("truetype"), url("../fonts/knewcons.svg#knewcons") format("svg"); font-weight: normal; font-style: normal; }
 /* line 15, ../../../styles/sass/knewcons.scss */
@@ -298,6 +297,64 @@ textarea.input-lg, .form-group-lg .form-control, select[multiple].input-lg, .for
 @media (min-width: 768px) { /* line 543, ../../../bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_forms.scss */
   .form-horizontal .form-group-sm .control-label { padding-top: 6px; } }
 
+/* line 7, ../../../bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_dropdowns.scss */
+.caret { display: inline-block; width: 0; height: 0; margin-left: 2px; vertical-align: middle; border-top: 4px solid; border-right: 4px solid transparent; border-left: 4px solid transparent; }
+
+/* line 19, ../../../bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_dropdowns.scss */
+.dropdown { position: relative; }
+
+/* line 24, ../../../bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_dropdowns.scss */
+.dropdown-toggle:focus { outline: 0; }
+
+/* line 29, ../../../bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_dropdowns.scss */
+.dropdown-menu { position: absolute; top: 100%; left: 0; z-index: 1000; display: none; float: left; min-width: 160px; padding: 5px 0; margin: 2px 0 0; list-style: none; font-size: 14px; text-align: left; background-color: #fff; border: 1px solid #ccc; border: 1px solid rgba(0, 0, 0, 0.15); border-radius: 4px; -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175); box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175); background-clip: padding-box; }
+/* line 52, ../../../bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_dropdowns.scss */
+.dropdown-menu.pull-right { right: 0; left: auto; }
+/* line 58, ../../../bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_dropdowns.scss */
+.dropdown-menu .divider { height: 1px; margin: 9px 0; overflow: hidden; background-color: #e5e5e5; }
+/* line 63, ../../../bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_dropdowns.scss */
+.dropdown-menu > li > a { display: block; padding: 3px 20px; clear: both; font-weight: normal; line-height: 1.42857; color: #333333; white-space: nowrap; }
+
+/* line 76, ../../../bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_dropdowns.scss */
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus { text-decoration: none; color: #262626; background-color: #f5f5f5; }
+
+/* line 86, ../../../bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_dropdowns.scss */
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus { color: #fff; text-decoration: none; outline: 0; background-color: #337ab7; }
+
+/* line 101, ../../../bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_dropdowns.scss */
+.dropdown-menu > .disabled > a, .dropdown-menu > .disabled > a:hover, .dropdown-menu > .disabled > a:focus { color: #777777; }
+/* line 108, ../../../bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_dropdowns.scss */
+.dropdown-menu > .disabled > a:hover, .dropdown-menu > .disabled > a:focus { text-decoration: none; background-color: transparent; background-image: none; filter: progid:DXImageTransform.Microsoft.gradient(enabled = false); cursor: not-allowed; }
+
+/* line 121, ../../../bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_dropdowns.scss */
+.open > .dropdown-menu { display: block; }
+/* line 126, ../../../bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_dropdowns.scss */
+.open > a { outline: 0; }
+
+/* line 135, ../../../bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_dropdowns.scss */
+.dropdown-menu-right { left: auto; right: 0; }
+
+/* line 145, ../../../bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_dropdowns.scss */
+.dropdown-menu-left { left: 0; right: auto; }
+
+/* line 151, ../../../bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_dropdowns.scss */
+.dropdown-header { display: block; padding: 3px 20px; font-size: 12px; line-height: 1.42857; color: #777777; white-space: nowrap; }
+
+/* line 161, ../../../bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_dropdowns.scss */
+.dropdown-backdrop { position: fixed; left: 0; right: 0; bottom: 0; top: 0; z-index: 990; }
+
+/* line 171, ../../../bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_dropdowns.scss */
+.pull-right > .dropdown-menu { right: 0; left: auto; }
+
+/* line 184, ../../../bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_dropdowns.scss */
+.dropup .caret, .navbar-fixed-bottom .dropdown .caret { border-top: 0; border-bottom: 4px solid; content: ""; }
+/* line 190, ../../../bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_dropdowns.scss */
+.dropup .dropdown-menu, .navbar-fixed-bottom .dropdown .dropdown-menu { top: auto; bottom: 100%; margin-bottom: 1px; }
+
+@media (min-width: 768px) { /* line 204, ../../../bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_dropdowns.scss */
+  .navbar-right .dropdown-menu { right: 0; left: auto; }
+  /* line 209, ../../../bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_dropdowns.scss */
+  .navbar-right .dropdown-menu-left { left: 0; right: auto; } }
 /* line 11, ../../../bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/_modals.scss */
 .modal-open { overflow: hidden; }
 
@@ -753,33 +810,288 @@ html { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: 
 .alert-warning { background-color: #fef2d8; color: #f3b528; }
 
 /* line 26, ../../../styles/sass/partials/_alert.scss */
-.alert-danger { background-color: #ffefe7; color: #ee5723; }
+.alert-danger { background-color: #feeef7; color: #ee5723; }
 
-/* line 3, ../../../styles/sass/partials/_checkbox.scss */
-[type=checkbox] { visibility: hidden; }
+/* line 4, ../../../styles/sass/partials/_checkbox.scss */
+.checkbox input[type=checkbox] { position: relative; margin: 0; }
 
-/* line 7, ../../../styles/sass/partials/_checkbox.scss */
-.checkbox { background: #fff; position: relative; width: 24px; height: 24px; margin: 0 10px; -webkit-border-radius: 50px; -moz-border-radius: 50px; border-radius: 50px; border: 3px solid #b5b5b5; }
+/* line 13, ../../../styles/sass/partials/_checkbox.scss */
+.checkbox-tick [type=checkbox], .checkbox-tag [type=checkbox] { visibility: hidden; }
 
-/* line 20, ../../../styles/sass/partials/_checkbox.scss */
-.checkbox label { position: absolute; width: 20px; height: 20px; left: 4px; top: 4px; -webkit-border-radius: 50px; -moz-border-radius: 50px; border-radius: 50px; cursor: pointer; }
+/* line 18, ../../../styles/sass/partials/_checkbox.scss */
+.checkbox-tick { background: #fff; position: relative; width: 24px; height: 24px; margin: 0; -webkit-border-radius: 50px; -moz-border-radius: 50px; border-radius: 50px; border: 3px solid #b5b5b5; display: inline-block; }
+
+/* line 32, ../../../styles/sass/partials/_checkbox.scss */
+.checkbox-tick label { position: absolute; width: 20px; height: 20px; left: 4px; top: 4px; padding-left: 35px; -webkit-border-radius: 50px; -moz-border-radius: 50px; border-radius: 50px; cursor: pointer; }
 
 /* Here's the tick when invisible, hovering and checked */
-/* line 36, ../../../styles/sass/partials/_checkbox.scss */
-.checkbox label:before { opacity: 0; content: ''; position: absolute; background: transparent; }
+/* line 49, ../../../styles/sass/partials/_checkbox.scss */
+.checkbox-tick label:before { opacity: 0; content: ''; position: absolute; background: transparent; }
 
-/* line 43, ../../../styles/sass/partials/_checkbox.scss */
-.checkbox label:after { position: absolute; background: none; width: 11px; height: 8px; top: 0; left: 0; opacity: 0; content: ''; border: 0; -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -o-transform: rotate(-45deg); -ms-transform: rotate(-45deg); transform: rotate(-45deg); }
+/* line 56, ../../../styles/sass/partials/_checkbox.scss */
+.checkbox-tick label:after { position: absolute; background: none; width: 11px; height: 8px; top: 0; left: 0; opacity: 0; content: ''; border: 0; -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -o-transform: rotate(-45deg); -ms-transform: rotate(-45deg); transform: rotate(-45deg); }
 
-/* line 61, ../../../styles/sass/partials/_checkbox.scss */
-.checkbox label:hover::after { background: none; border: 3px solid #b5b5b5; border-top: 0; border-right: 0; opacity: 0.3; }
+/* line 74, ../../../styles/sass/partials/_checkbox.scss */
+.checkbox-tick label:hover::after { background: none; border: 3px solid #b5b5b5; border-top: 0; border-right: 0; opacity: 0.3; }
 
-/* line 69, ../../../styles/sass/partials/_checkbox.scss */
-.checkbox [type=checkbox]:checked { opacity: 0; outline: 0; }
-/* line 73, ../../../styles/sass/partials/_checkbox.scss */
-.checkbox [type=checkbox]:checked + label:before { -o-transition: border-color 0.1s ease-in-out, background-color 0.1s ease-in-out, background-image 0.1s ease-in-out, color 0.1s linear; -webkit-transition: border-color 0.1s ease-in-out, background-color 0.1s ease-in-out, background-image 0.1s ease-in-out, color 0.1s linear; -moz-transition: border-color 0.1s ease-in-out, background-color 0.1s ease-in-out, background-image 0.1s ease-in-out, color 0.1s linear; transition: border-color 0.1s ease-in-out, background-color 0.1s ease-in-out, background-image 0.1s ease-in-out, color 0.1s linear; background: #4ea565; width: 24px; height: 24px; opacity: 1; top: -7px; left: -7px; -webkit-border-radius: 50px; -moz-border-radius: 50px; border-radius: 50px; border: 3px solid #4ea565; }
-/* line 90, ../../../styles/sass/partials/_checkbox.scss */
-.checkbox [type=checkbox]:checked + label:after { -o-transition: border-color 0.1s ease-in-out, background-color 0.1s ease-in-out, background-image 0.1s ease-in-out, color 0.1s linear; -webkit-transition: border-color 0.1s ease-in-out, background-color 0.1s ease-in-out, background-image 0.1s ease-in-out, color 0.1s linear; -moz-transition: border-color 0.1s ease-in-out, background-color 0.1s ease-in-out, background-image 0.1s ease-in-out, color 0.1s linear; transition: border-color 0.1s ease-in-out, background-color 0.1s ease-in-out, background-image 0.1s ease-in-out, color 0.1s linear; border: 3px solid #fff; border-top: 0; border-right: 0; opacity: 1; }
+/* line 82, ../../../styles/sass/partials/_checkbox.scss */
+.checkbox-tick [type=checkbox]:checked { opacity: 0; outline: 0; }
+/* line 86, ../../../styles/sass/partials/_checkbox.scss */
+.checkbox-tick [type=checkbox]:checked + label:before { -o-transition: border-color 0.1s ease-in-out, background-color 0.1s ease-in-out, background-image 0.1s ease-in-out, color 0.1s linear; -webkit-transition: border-color 0.1s ease-in-out, background-color 0.1s ease-in-out, background-image 0.1s ease-in-out, color 0.1s linear; -moz-transition: border-color 0.1s ease-in-out, background-color 0.1s ease-in-out, background-image 0.1s ease-in-out, color 0.1s linear; transition: border-color 0.1s ease-in-out, background-color 0.1s ease-in-out, background-image 0.1s ease-in-out, color 0.1s linear; background: #4ea565; width: 24px; height: 24px; opacity: 1; top: -7px; left: -7px; -webkit-border-radius: 50px; -moz-border-radius: 50px; border-radius: 50px; border: 3px solid #4ea565; }
+/* line 103, ../../../styles/sass/partials/_checkbox.scss */
+.checkbox-tick [type=checkbox]:checked + label:after { -o-transition: border-color 0.1s ease-in-out, background-color 0.1s ease-in-out, background-image 0.1s ease-in-out, color 0.1s linear; -webkit-transition: border-color 0.1s ease-in-out, background-color 0.1s ease-in-out, background-image 0.1s ease-in-out, color 0.1s linear; -moz-transition: border-color 0.1s ease-in-out, background-color 0.1s ease-in-out, background-image 0.1s ease-in-out, color 0.1s linear; transition: border-color 0.1s ease-in-out, background-color 0.1s ease-in-out, background-image 0.1s ease-in-out, color 0.1s linear; border: 3px solid #fff; border-top: 0; border-right: 0; opacity: 1; }
+
+/* line 113, ../../../styles/sass/partials/_checkbox.scss */
+.checkbox-tag { height: 34px; }
+/* line 116, ../../../styles/sass/partials/_checkbox.scss */
+.checkbox-tag label { font-size: 12px; font-weight: 700; text-decoration: none; text-transform: uppercase; letter-spacing: 0.05em; color: #b5b5b5; line-height: 15px; height: 34px; background: #f1f1f1; position: absolute; left: 0; line-height: 34px; padding: 0 20px; text-align: center; text-transform: none; text-decoration: none; }
+/* line 76, ../../../styles/sass/modules/_typography.scss */
+.checkbox-tag label:hover { color: #757575; text-decoration: none; }
+/* line 131, ../../../styles/sass/partials/_checkbox.scss */
+.checkbox-tag label:hover { background: #454545; color: #fff; }
+/* line 137, ../../../styles/sass/partials/_checkbox.scss */
+.checkbox-tag [type=checkbox]:checked { opacity: 0; outline: 0; }
+/* line 141, ../../../styles/sass/partials/_checkbox.scss */
+.checkbox-tag [type=checkbox]:checked + label { -o-transition: border-color 0.1s ease-in-out, background-color 0.1s ease-in-out, background-image 0.1s ease-in-out, color 0.1s linear; -webkit-transition: border-color 0.1s ease-in-out, background-color 0.1s ease-in-out, background-image 0.1s ease-in-out, color 0.1s linear; -moz-transition: border-color 0.1s ease-in-out, background-color 0.1s ease-in-out, background-image 0.1s ease-in-out, color 0.1s linear; transition: border-color 0.1s ease-in-out, background-color 0.1s ease-in-out, background-image 0.1s ease-in-out, color 0.1s linear; background: #757575; color: #fff; opacity: 1; }
+
+/*!
+ * Datepicker for Bootstrap
+ *
+ * Copyright 2012 Stefan Petre
+ * Improvements by Andrew Rowls
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ */
+/* line 11, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker { padding: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; direction: ltr; }
+
+/* line 19, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker-inline { width: 220px; }
+
+/* line 23, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker.datepicker-rtl { direction: rtl; }
+
+/* line 28, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker.datepicker-rtl td span { float: right; }
+
+/* line 33, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker-dropdown { top: 0; left: 0; }
+
+/* line 38, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker-dropdown:before { content: ''; display: inline-block; border-left: 7px solid transparent; border-right: 7px solid transparent; border-bottom: 7px solid #ccc; border-top: 0; border-bottom-color: rgba(0, 0, 0, 0.2); position: absolute; }
+
+/* line 49, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker-dropdown:after { content: ''; display: inline-block; border-left: 6px solid transparent; border-right: 6px solid transparent; border-bottom: 6px solid #fff; border-top: 0; position: absolute; }
+
+/* line 59, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker-dropdown.datepicker-orient-left:before { left: 6px; }
+
+/* line 63, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker-dropdown.datepicker-orient-left:after { left: 7px; }
+
+/* line 67, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker-dropdown.datepicker-orient-right:before { right: 6px; }
+
+/* line 71, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker-dropdown.datepicker-orient-right:after { right: 7px; }
+
+/* line 75, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker-dropdown.datepicker-orient-top:before { top: -7px; }
+
+/* line 79, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker-dropdown.datepicker-orient-top:after { top: -6px; }
+
+/* line 83, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker-dropdown.datepicker-orient-bottom:before { bottom: -7px; border-bottom: 0; border-top: 7px solid #ccc; }
+
+/* line 89, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker-dropdown.datepicker-orient-bottom:after { bottom: -6px; border-bottom: 0; border-top: 6px solid #fff; }
+
+/* line 95, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker > div { display: none; }
+
+/* line 100, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker.days div.datepicker-days { display: block; }
+
+/* line 106, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker.months div.datepicker-months { display: block; }
+
+/* line 112, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker.years div.datepicker-years { display: block; }
+
+/* line 117, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker table { margin: 0; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+
+/* line 127, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker td, .datepicker th { text-align: center; width: 20px; height: 20px; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; border: 0; }
+
+/* line 138, ../../../styles/sass/partials/_datepicker.scss */
+.table-striped .datepicker td, .table-striped .datepicker th { background-color: transparent; }
+
+/* line 144, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker tr td.day:hover, .datepicker tr td.day.focused { background: #eee; cursor: pointer; }
+/* line 150, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker tr td.old, .datepicker tr td.new { color: #999; }
+/* line 155, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker tr td.disabled, .datepicker tr td.disabled:hover { background: none; color: #999; cursor: default; }
+/* line 162, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker tr td.today, .datepicker tr td.today:hover, .datepicker tr td.today.disabled, .datepicker tr td.today.disabled:hover { background-color: #f1f1f1; background-image: none; color: #454545; }
+/* line 171, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker tr td.today:hover, .datepicker tr td.today:hover:hover, .datepicker tr td.today.disabled:hover, .datepicker tr td.today.disabled:hover:hover, .datepicker tr td.today:active, .datepicker tr td.today:hover:active, .datepicker tr td.today.disabled:active, .datepicker tr td.today.disabled:hover:active, .datepicker tr td.today.active, .datepicker tr td.today:hover.active, .datepicker tr td.today.disabled.active, .datepicker tr td.today.disabled:hover.active, .datepicker tr td.today.disabled, .datepicker tr td.today:hover.disabled, .datepicker tr td.today.disabled.disabled, .datepicker tr td.today.disabled:hover.disabled, .datepicker tr td.today[disabled], .datepicker tr td.today:hover[disabled], .datepicker tr td.today.disabled[disabled], .datepicker tr td.today.disabled:hover[disabled] { background-color: #f1f1f1; }
+/* line 194, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker tr td.today:active, .datepicker tr td.today:hover:active, .datepicker tr td.today.disabled:active, .datepicker tr td.today.disabled:hover:active, .datepicker tr td.today.active, .datepicker tr td.today:hover.active, .datepicker tr td.today.disabled.active, .datepicker tr td.today.disabled:hover.active { background-color: #f1f1f1; }
+/* line 206, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker tr td.today:hover:hover { color: #454545; }
+/* line 210, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker tr td.today.active:hover { color: #fff; }
+/* line 214, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker tr td.range, .datepicker tr td.range:hover, .datepicker tr td.range.disabled, .datepicker tr td.range.disabled:hover { background: #b5b5b5; -webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0; }
+/* line 224, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker tr td.range.today, .datepicker tr td.range.today:hover, .datepicker tr td.range.today.disabled, .datepicker tr td.range.today.disabled:hover { background-color: #cceef1; background-image: none; background-repeat: repeat-x; -webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0; }
+/* line 237, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker tr td.range.today:hover, .datepicker tr td.range.today:hover:hover, .datepicker tr td.range.today.disabled:hover, .datepicker tr td.range.today.disabled:hover:hover, .datepicker tr td.range.today:active, .datepicker tr td.range.today:hover:active, .datepicker tr td.range.today.disabled:active, .datepicker tr td.range.today.disabled:hover:active, .datepicker tr td.range.today.active, .datepicker tr td.range.today:hover.active, .datepicker tr td.range.today.disabled.active, .datepicker tr td.range.today.disabled:hover.active, .datepicker tr td.range.today.disabled, .datepicker tr td.range.today:hover.disabled, .datepicker tr td.range.today.disabled.disabled, .datepicker tr td.range.today.disabled:hover.disabled, .datepicker tr td.range.today[disabled], .datepicker tr td.range.today:hover[disabled], .datepicker tr td.range.today.disabled[disabled], .datepicker tr td.range.today.disabled:hover[disabled] { background-color: #cceef1; }
+/* line 261, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker tr td.range.today:active, .datepicker tr td.range.today:hover:active, .datepicker tr td.range.today.disabled:active, .datepicker tr td.range.today.disabled:hover:active, .datepicker tr td.range.today.active, .datepicker tr td.range.today:hover.active, .datepicker tr td.range.today.disabled.active, .datepicker tr td.range.today.disabled:hover.active { background-color: #cceef1; }
+/* line 272, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker tr td.selected, .datepicker tr td.selected:hover, .datepicker tr td.selected.disabled, .datepicker tr td.selected.disabled:hover { background-color: #757575; background-image: none; color: #fff; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); }
+/* line 283, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker tr td.selected:hover, .datepicker tr td.selected:hover:hover, .datepicker tr td.selected.disabled:hover, .datepicker tr td.selected.disabled:hover:hover, .datepicker tr td.selected:active, .datepicker tr td.selected:hover:active, .datepicker tr td.selected.disabled:active, .datepicker tr td.selected.disabled:hover:active, .datepicker tr td.selected.active, .datepicker tr td.selected:hover.active, .datepicker tr td.selected.disabled.active, .datepicker tr td.selected.disabled:hover.active, .datepicker tr td.selected.disabled, .datepicker tr td.selected:hover.disabled, .datepicker tr td.selected.disabled.disabled, .datepicker tr td.selected.disabled:hover.disabled, .datepicker tr td.selected[disabled], .datepicker tr td.selected:hover[disabled], .datepicker tr td.selected.disabled[disabled], .datepicker tr td.selected.disabled:hover[disabled] { background-color: #757575; }
+/* line 307, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker tr td.selected:active, .datepicker tr td.selected:hover:active, .datepicker tr td.selected.disabled:active, .datepicker tr td.selected.disabled:hover:active, .datepicker tr td.selected.active, .datepicker tr td.selected:hover.active, .datepicker tr td.selected.disabled.active, .datepicker tr td.selected.disabled:hover.active { background-color: #454545; }
+/* line 318, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker tr td.active, .datepicker tr td.active:hover, .datepicker tr td.active.disabled, .datepicker tr td.active.disabled:hover { background-color: #1abcc1; background-image: none; color: #fff; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); }
+/* line 328, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker tr td.active:hover, .datepicker tr td.active:hover:hover, .datepicker tr td.active.disabled:hover, .datepicker tr td.active.disabled:hover:hover, .datepicker tr td.active:active, .datepicker tr td.active:hover:active, .datepicker tr td.active.disabled:active, .datepicker tr td.active.disabled:hover:active, .datepicker tr td.active.active, .datepicker tr td.active:hover.active, .datepicker tr td.active.disabled.active, .datepicker tr td.active.disabled:hover.active, .datepicker tr td.active.disabled, .datepicker tr td.active:hover.disabled, .datepicker tr td.active.disabled.disabled, .datepicker tr td.active.disabled:hover.disabled, .datepicker tr td.active[disabled], .datepicker tr td.active:hover[disabled], .datepicker tr td.active.disabled[disabled], .datepicker tr td.active.disabled:hover[disabled] { background-color: #159fa3; }
+/* line 351, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker tr td.active:active, .datepicker tr td.active:hover:active, .datepicker tr td.active.disabled:active, .datepicker tr td.active.disabled:hover:active, .datepicker tr td.active.active, .datepicker tr td.active:hover.active, .datepicker tr td.active.disabled.active, .datepicker tr td.active.disabled:hover.active { background-color: #1abcc1; }
+
+/* line 363, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker td span { display: block; width: 23%; height: 54px; line-height: 54px; float: left; margin: 1%; cursor: pointer; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; }
+/* line 375, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker td span:hover { background: #b5b5b5; }
+/* line 379, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker td span.disabled, .datepicker td span.disabled:hover { background: none; color: #757575; cursor: default; }
+/* line 386, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker td span.active, .datepicker td span.active:hover, .datepicker td span.active.disabled, .datepicker td span.active.disabled:hover { background-color: #1abcc1; background-image: none; color: #fff; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); }
+/* line 396, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker td span.active:hover, .datepicker td span.active:hover:hover, .datepicker td span.active.disabled:hover, .datepicker td span.active.disabled:hover:hover, .datepicker td span.active:active, .datepicker td span.active:hover:active, .datepicker td span.active.disabled:active, .datepicker td span.active.disabled:hover:active, .datepicker td span.active.active, .datepicker td span.active:hover.active, .datepicker td span.active.disabled.active, .datepicker td span.active.disabled:hover.active, .datepicker td span.active.disabled, .datepicker td span.active:hover.disabled, .datepicker td span.active.disabled.disabled, .datepicker td span.active.disabled:hover.disabled, .datepicker td span.active[disabled], .datepicker td span.active:hover[disabled], .datepicker td span.active.disabled[disabled], .datepicker td span.active.disabled:hover[disabled] { background-color: #159fa3; }
+/* line 419, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker td span.active:active, .datepicker td span.active:hover:active, .datepicker td span.active.disabled:active, .datepicker td span.active.disabled:hover:active, .datepicker td span.active.active, .datepicker td span.active:hover.active, .datepicker td span.active.disabled.active, .datepicker td span.active.disabled:hover.active { background-color: #1abcc1; }
+/* line 430, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker td span.old, .datepicker td span.new { color: #757575; }
+
+/* line 437, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker th.datepicker-switch { width: 145px; }
+
+/* line 442, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker thead th { cursor: pointer; }
+/* line 445, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker thead th:hover { background: #f1f1f1; }
+
+/* line 451, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker tfoot th { cursor: pointer; }
+/* line 454, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker tfoot th:hover { background: #f1f1f1; }
+
+/* line 459, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker .cw { font-size: 10px; width: 12px; padding: 0 2px 0 5px; vertical-align: middle; }
+
+/* line 467, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker tr:first-child .cw { cursor: default; background-color: transparent; }
+
+/* line 473, ../../../styles/sass/partials/_datepicker.scss */
+.input-append.date .add-on i, .input-prepend.date .add-on i { cursor: pointer; width: 16px; height: 16px; }
+
+/* line 480, ../../../styles/sass/partials/_datepicker.scss */
+.input-daterange input { text-align: center; }
+
+/* line 484, ../../../styles/sass/partials/_datepicker.scss */
+.input-daterange input:first-child { -webkit-border-radius: 3px 0 0 3px; -moz-border-radius: 3px 0 0 3px; border-radius: 3px 0 0 3px; }
+
+/* line 490, ../../../styles/sass/partials/_datepicker.scss */
+.input-daterange input:last-child { -webkit-border-radius: 0 3px 3px 0; -moz-border-radius: 0 3px 3px 0; border-radius: 0 3px 3px 0; }
+
+/* line 496, ../../../styles/sass/partials/_datepicker.scss */
+.input-daterange .add-on { display: inline-block; width: auto; min-width: 16px; height: 20px; padding: 4px 5px; font-weight: normal; line-height: 20px; text-align: center; text-shadow: 0 1px 0 #fff; vertical-align: middle; background-color: #f1f1f1; border: 1px solid #ccc; margin-left: -5px; margin-right: -5px; }
+
+/* line 513, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker.dropdown-menu { position: absolute; top: 100%; left: 0; z-index: 1000; float: left; display: none; min-width: 160px; list-style: none; background-color: #fff; border: 1px solid rgba(0, 0, 0, 0.2); -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); -webkit-background-clip: padding-box; -moz-background-clip: padding; background-clip: padding-box; color: #333; font-size: 13px; line-height: 20px; }
+
+/* line 538, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker.dropdown-menu th, .datepicker.datepicker-inline th, .datepicker.dropdown-menu td, .datepicker.datepicker-inline td { padding: 4px 5px; }
+
+/* Additional custom datepicker styling */
+/* line 550, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker { top: 0; left: 0; padding: 4px; margin-top: 1px; -webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0; box-shadow: none; }
+
+/* line 561, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker > div { display: none; }
+
+/* line 565, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker table { width: 100%; margin: 0; max-width: 100%; background-color: transparent; border-collapse: collapse; border-spacing: 2px; box-sizing: content-box; }
+/* line 574, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker table thead { display: table-header-group; }
+/* line 578, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker table tbody { display: table-row-group; }
+/* line 582, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker table tr { height: inherit; border-collapse: collapse; display: table-row; }
+/* line 588, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker table td { display: table-cell; border-collapse: collapse; border: 0; line-height: 20px; font-size: 14px; }
+
+/* line 598, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker thead th { font-size: 16px; font-weight: 300; letter-spacing: 0.015em; line-height: 19px; color: #545454; color: #454545; font-size: 14px; font-weight: 500; }
+
+/* line 606, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker td, .datepicker th { text-align: center; height: 20px; width: 20px; padding: 4px 5px; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; }
+
+/* line 619, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker td.day:hover { background: #cceef1; cursor: pointer; }
+
+/* line 626, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker td.day.disabled { color: #f1f1f1; }
+
+/* line 632, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker td.old, .datepicker td.new { color: #545454; }
+
+/* line 639, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker td.active, .datepicker td.active:hover { color: #fff; background-color: #cceef1; border: 0; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); }
+/* line 647, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker td.active:active, .datepicker td.active:hover:active, .datepicker td.active.active, .datepicker td.active:hover.active { background-color: #159fa3; }
+
+/* line 656, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker.active:hover, .datepicker.active:hover:hover, .datepicker.active:focus, .datepicker.active:hover:focus, .datepicker.active:active, .datepicker.active:hover:active, .datepicker.active.active, .datepicker.active:hover.active, .datepicker.active.disabled, .datepicker.active:hover.disabled, .datepicker.active[disabled], .datepicker.active:hover[disabled] { color: #fff; background-color: #cceef1; }
+
+/* line 673, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker td span { display: block; width: 47px; height: 54px; line-height: 54px; float: left; margin: 2px; cursor: pointer; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; }
+
+/* line 687, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker td span:hover { background: #ccc; }
+/* line 691, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker td span.active { color: #fff; background-color: #159fa3; border: 0; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); }
+
+/* line 699, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker td .active:hover, .datepicker td .active:focus, .datepicker td .active:active, .datepicker td .active.active, .datepicker td .active.disabled, .datepicker td .active[disabled] { color: #fff; background-color: #159fa3; }
+
+/* line 709, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker td .old { color: #545454; }
+
+/* line 713, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker th { width: 20px; }
+/* line 716, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker th.datepicker-switch { width: 145px; }
+
+/* line 722, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker th.next, .datepicker th.prev { font-size: 21px; }
+
+/* line 729, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker thead th { cursor: pointer; padding: 4px 5px; }
+
+/* line 735, ../../../styles/sass/partials/_datepicker.scss */
+.datepicker tfoot { display: none; }
+
+/* line 739, ../../../styles/sass/partials/_datepicker.scss */
+.input-append.date .add-on i, .input-prepend.date .add-on i { display: block; cursor: pointer; width: 16px; height: 16px; }
 
 /* Neat 1.7.0 http://neat.bourbon.io Copyright 2012-2014 thoughtbot, inc. MIT License */
 /* line 2, ../../../bower_components/neat/app/assets/stylesheets/grid/_box-sizing.scss */
@@ -822,155 +1134,139 @@ html { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: 
 /* NP: Clickable light */
 /*  Text colors alias
 */
-/* NEEDS REVISION A SACO */
 /* --- EASYDROPDOWN METRO THEME --- */
 /* PREFIXED CSS */
-/* line 10, ../../../styles/sass/partials/_easydropdown.scss */
+/* line 8, ../../../styles/sass/partials/_easydropdown.scss */
 .dropdown, .dropdown div, .dropdown li, .dropdown div::after, .dropdown .selected::after, .dropdown:after { -webkit-transition: all 150ms ease-in-out; -moz-transition: all 150ms ease-in-out; -ms-transition: all 150ms ease-in-out; transition: all 150ms ease-in-out; }
 
-/* line 22, ../../../styles/sass/partials/_easydropdown.scss */
+/* line 20, ../../../styles/sass/partials/_easydropdown.scss */
 .dropdown .selected::after, .dropdown.scrollable div::after { -webkit-pointer-events: none; -moz-pointer-events: none; -ms-pointer-events: none; pointer-events: none; }
 
 /* WRAPPER */
-/* line 32, ../../../styles/sass/partials/_easydropdown.scss */
+/* line 30, ../../../styles/sass/partials/_easydropdown.scss */
 .dropdown { position: relative; cursor: pointer; background: #fff; float: left; padding-right: 30px; -webkit-user-select: none; -moz-user-select: none; user-select: none; }
 
-/* line 44, ../../../styles/sass/partials/_easydropdown.scss */
+/* line 42, ../../../styles/sass/partials/_easydropdown.scss */
 .dropdown.open { z-index: 6; }
 
-/* line 48, ../../../styles/sass/partials/_easydropdown.scss */
+/* line 46, ../../../styles/sass/partials/_easydropdown.scss */
 .dropdown:hover { background: #fff; }
 
-/* line 52, ../../../styles/sass/partials/_easydropdown.scss */
-.dropdown.focus:after { background: #0180d1; }
+/* line 50, ../../../styles/sass/partials/_easydropdown.scss */
+.dropdown.focus:after { background: #1abcc1; }
 
 /* CARAT */
-/* line 58, ../../../styles/sass/partials/_easydropdown.scss */
-.dropdown .carat { width: 30px; height: 30px; display: block; position: absolute; z-index: 5; right: 0; top: 0; border: 1px solid #eaeaea; background-position: center center; background-repeat: no-repeat; background-image: url("../images/dropdown-arrow.png"); }
+/* line 56, ../../../styles/sass/partials/_easydropdown.scss */
+.dropdown .carat { width: 30px; height: 30px; display: block; position: absolute; z-index: 5; right: 0; top: 0; border: 1px solid #ccc; background-position: center center; background-repeat: no-repeat; background-image: url("../images/dropdown-arrow.png"); }
 
-/* line 74, ../../../styles/sass/partials/_easydropdown.scss */
+/* line 71, ../../../styles/sass/partials/_easydropdown.scss */
 .dropdown:not(.disabled):hover .carat { background-image: url("../images/dropdown-arrow-active.png"); }
 
 /* OLD SELECT (HIDDEN) */
-/* line 80, ../../../styles/sass/partials/_easydropdown.scss */
+/* line 77, ../../../styles/sass/partials/_easydropdown.scss */
 .dropdown .old { position: absolute; left: 0; top: 0; height: 0; width: 0; overflow: hidden; }
 
-/* line 89, ../../../styles/sass/partials/_easydropdown.scss */
+/* line 86, ../../../styles/sass/partials/_easydropdown.scss */
 .dropdown select { position: absolute; left: 0; top: 0; }
 
-/* line 95, ../../../styles/sass/partials/_easydropdown.scss */
+/* line 92, ../../../styles/sass/partials/_easydropdown.scss */
 .dropdown.touch .old { width: 100%; height: 100%; }
 
-/* line 100, ../../../styles/sass/partials/_easydropdown.scss */
+/* line 97, ../../../styles/sass/partials/_easydropdown.scss */
 .dropdown.touch select { width: 100%; height: 100%; opacity: 0; }
 
 /* SELECTED FEEDBACK ITEM */
-/* line 108, ../../../styles/sass/partials/_easydropdown.scss */
-.dropdown .selected, .dropdown li { line-height: 30px; font-size: 16px; font-weight: 500; color: #b5b5b5; text-transform: uppercase; border: 1px solid #eaeaea; border-right: 0; display: block; padding: 0 8px; height: 30px; overflow: hidden; white-space: nowrap; }
+/* line 105, ../../../styles/sass/partials/_easydropdown.scss */
+.dropdown .selected, .dropdown li { font-family: "museo-sans", sans-serif; font-size: 1rem; font-weight: 300; line-height: 1.3; color: #545454; line-height: 30px; font-size: 14px; font-weight: 300; color: #545454; border: 1px solid #ccc; border-right: 0; display: block; padding: 0 8px; height: 30px; overflow: hidden; white-space: nowrap; }
 
-/* line 122, ../../../styles/sass/partials/_easydropdown.scss */
-.dropdown.disabled .selected, .dropdown.disabled .carat { border-color: #bebebe; background-color: #eaeaea; color: #bebebe; }
+/* line 118, ../../../styles/sass/partials/_easydropdown.scss */
+.dropdown.disabled .selected, .dropdown.disabled .carat { border-color: #b5b5b5; background-color: #ccc; color: #ccc; }
 
-/* line 129, ../../../styles/sass/partials/_easydropdown.scss */
+/* line 125, ../../../styles/sass/partials/_easydropdown.scss */
 .dropdown li { border: 0; height: 25px; line-height: 25px; }
 
-/* line 135, ../../../styles/sass/partials/_easydropdown.scss */
+/* line 131, ../../../styles/sass/partials/_easydropdown.scss */
 .dropdown .selected::after { content: ''; position: absolute; right: 0; top: 0; bottom: 0; width: 60px; }
 
 /* DROP DOWN WRAPPER */
-/* line 146, ../../../styles/sass/partials/_easydropdown.scss */
-.dropdown div { border: 1px solid #eaeaea; position: absolute; height: 0; left: 0; right: 0; top: 28px; overflow: hidden; opacity: 0; background: #fff; }
+/* line 142, ../../../styles/sass/partials/_easydropdown.scss */
+.dropdown div { border: 1px solid #ccc; position: absolute; height: 0; left: 0; right: 0; top: 28px; overflow: hidden; opacity: 0; background: #fff; }
 
 /* Height is adjusted by JS on open */
-/* line 160, ../../../styles/sass/partials/_easydropdown.scss */
+/* line 156, ../../../styles/sass/partials/_easydropdown.scss */
 .dropdown.open div { opacity: 1; z-index: 8; }
 
 /* DROP DOWN LIST */
-/* line 167, ../../../styles/sass/partials/_easydropdown.scss */
-.dropdown ul { padding: 0; margin: -1px 0 0; position: absolute; left: 0; top: 0; height: 100%; width: 150px; list-style: none; overflow: hidden; }
+/* line 163, ../../../styles/sass/partials/_easydropdown.scss */
+.dropdown ul { padding: 0; margin: -1px 0 0; position: absolute; left: 0; top: 0; height: 100%; width: 150px; list-style-type: none; overflow: hidden; }
 
-/* line 179, ../../../styles/sass/partials/_easydropdown.scss */
+/* line 175, ../../../styles/sass/partials/_easydropdown.scss */
 .dropdown.scrollable.open ul { overflow-y: auto; }
 
 /* DROP DOWN LIST ITEMS */
-/* line 185, ../../../styles/sass/partials/_easydropdown.scss */
-.dropdown li { list-style: none; }
+/* line 182, ../../../styles/sass/partials/_easydropdown.scss */
+.dropdown li.focus { background-color: #cceef1; }
 
-/* .focus class is also added on hover */
-/* line 192, ../../../styles/sass/partials/_easydropdown.scss */
-.dropdown li.focus { background-color: #edf9fa; color: #1bacb6; }
-
-/* line 199, ../../../styles/sass/partials/_easydropdown.scss */
-.dropdown li.active { background-color: #9da2a6; color: #fff; }
+/* line 188, ../../../styles/sass/partials/_easydropdown.scss */
+.dropdown li.active { background-color: #02b4d0; color: #fff; }
 
 /* CUSTOM SCSS */
-/* line 207, ../../../styles/sass/partials/_easydropdown.scss */
+/* line 196, ../../../styles/sass/partials/_easydropdown.scss */
 .dropdown { position: relative; display: table; border-collapse: separate; padding-right: 30px; padding-left: 0; border: 1px solid #ccc; }
-/* line 215, ../../../styles/sass/partials/_easydropdown.scss */
+/* line 204, ../../../styles/sass/partials/_easydropdown.scss */
 .dropdown .selected { border: 0; text-transform: none; }
-/* line 220, ../../../styles/sass/partials/_easydropdown.scss */
+/* line 209, ../../../styles/sass/partials/_easydropdown.scss */
 .dropdown .carat { right: 0; border: 0; }
-/* line 225, ../../../styles/sass/partials/_easydropdown.scss */
+/* line 214, ../../../styles/sass/partials/_easydropdown.scss */
 .dropdown ul { list-style-type: none; }
+/* line 218, ../../../styles/sass/partials/_easydropdown.scss */
+.dropdown li { list-style-type: none; }
 
-/* line 231, ../../../styles/sass/partials/_easydropdown.scss */
-.alt-dropdown .dropdown { width: 105px; }
-/* line 234, ../../../styles/sass/partials/_easydropdown.scss */
-.alt-dropdown .dropdown ul { width: 105px; }
-/* line 238, ../../../styles/sass/partials/_easydropdown.scss */
-.alt-dropdown .dropdown .carat, .alt-dropdown .dropdown .selected, .alt-dropdown .dropdown li { border-color: #ccc; text-align: left; }
-/* line 245, ../../../styles/sass/partials/_easydropdown.scss */
-.alt-dropdown .dropdown .selected { color: #fff; background-color: #ccc; border-right: 0; }
-/* line 251, ../../../styles/sass/partials/_easydropdown.scss */
-.alt-dropdown .dropdown .carat { background-color: #ccc; background-image: url("../images/dropdown-arrow.png"); border-left: 0; }
-
-/* line 3, ../../../styles/sass/partials/_forms.scss */
-[type=text], [type=email], .input-text, .thick-input { width: 100%; transition: border-color .5s; background: #fff; margin-bottom: 1rem; font-size: 1rem; line-height: 2rem; height: 2rem; padding: 0 .5rem; border: 1px solid #d0d0d0; }
-/* line 19, ../../../styles/sass/partials/_forms.scss */
-[type=text].error, [type=email].error, .input-text.error, .thick-input.error { border-color: #f00; color: #f00; }
-/* line 23, ../../../styles/sass/partials/_forms.scss */
-[type=text].error:focus, [type=email].error:focus, .input-text.error:focus, .thick-input.error:focus { border-color: #f00; }
-/* line 28, ../../../styles/sass/partials/_forms.scss */
-[type=text].success, [type=email].success, .input-text.success, .thick-input.success { border-color: #86d886; color: #008000; }
-/* line 32, ../../../styles/sass/partials/_forms.scss */
-[type=text].success:focus, [type=email].success:focus, .input-text.success:focus, .thick-input.success:focus { border-color: #86d886; }
-/* line 37, ../../../styles/sass/partials/_forms.scss */
+/* line 1, ../../../styles/sass/partials/_forms.scss */
+[type=text], [type=email], .input-text, .thick-input { width: 100%; transition: border-color .5s; background: #fff; margin-bottom: 1rem; font-size: 1rem; line-height: 2rem; height: 2rem; padding: 0 .5rem; border: 1px solid #ccc; }
+/* line 17, ../../../styles/sass/partials/_forms.scss */
+[type=text].error, [type=email].error, .input-text.error, .thick-input.error { border-color: #cf2e33; color: #cf2e33; }
+/* line 21, ../../../styles/sass/partials/_forms.scss */
+[type=text].error:focus, [type=email].error:focus, .input-text.error:focus, .thick-input.error:focus { border-color: #cf2e33; }
+/* line 26, ../../../styles/sass/partials/_forms.scss */
+[type=text].success, [type=email].success, .input-text.success, .thick-input.success { border-color: #4ea565; color: #4ea565; }
+/* line 30, ../../../styles/sass/partials/_forms.scss */
+[type=text].success:focus, [type=email].success:focus, .input-text.success:focus, .thick-input.success:focus { border-color: #4ea565; }
+/* line 35, ../../../styles/sass/partials/_forms.scss */
+[type=text].disabled, [type=email].disabled, .input-text.disabled, .thick-input.disabled { background: #f1f1f1; border-color: #f1f1f1; color: #b5b5b5; }
+/* line 41, ../../../styles/sass/partials/_forms.scss */
 [type=text]:focus, [type=email]:focus, .input-text:focus, .thick-input:focus { outline: none; border: 1px solid #1abcc1; }
 
-/* line 43, ../../../styles/sass/partials/_forms.scss */
+/* line 47, ../../../styles/sass/partials/_forms.scss */
 .input-text { position: relative; }
-/* line 54, ../../../styles/sass/partials/_forms.scss */
-.input-text.success:after, .input-text.success:not(:focus):after { position: absolute; font-family: knewcons; top: 0; right: 0; padding: 0 .5rem; content: "\e006"; color: #86d886; }
-/* line 61, ../../../styles/sass/partials/_forms.scss */
-.input-text.error:after, .input-text.error:not(:focus):after { position: absolute; font-family: knewcons; top: 0; right: 0; padding: 0 .5rem; content: "\e005"; color: #f00; }
-/* line 68, ../../../styles/sass/partials/_forms.scss */
-.input-text.loading:after, .input-text.loading:not(:focus):after { position: absolute; font-family: knewcons; top: 0; right: 0; padding: 0 .5rem; content: "loading"; color: #a9a9a9; }
-/* line 76, ../../../styles/sass/partials/_forms.scss */
-.input-text:not(:focus):after { position: absolute; font-family: knewcons; top: 0; right: 0; padding: 0 .5rem; content: "\e012"; color: #a9a9a9; }
-/* line 83, ../../../styles/sass/partials/_forms.scss */
-.input-text:empty:not(:focus):before { content: attr(data-placeholder); color: #a9a9a9; }
+/* line 58, ../../../styles/sass/partials/_forms.scss */
+.input-text.success:after, .input-text.success:not(:focus):after { position: absolute; font-family: knewcons; top: 0; right: 0; padding: 0 .5rem; content: "\e006"; color: #4ea565; }
+/* line 65, ../../../styles/sass/partials/_forms.scss */
+.input-text.error:after, .input-text.error:not(:focus):after { position: absolute; font-family: knewcons; top: 0; right: 0; padding: 0 .5rem; content: "\e005"; color: #cf2e33; }
+/* line 72, ../../../styles/sass/partials/_forms.scss */
+.input-text.loading:after, .input-text.loading:not(:focus):after { position: absolute; font-family: knewcons; top: 0; right: 0; padding: 0 .5rem; content: "loading"; color: #b5b5b5; }
+/* line 80, ../../../styles/sass/partials/_forms.scss */
+.input-text:not(:focus):after { position: absolute; font-family: knewcons; top: 0; right: 0; padding: 0 .5rem; content: "\e012"; color: #b5b5b5; }
+/* line 87, ../../../styles/sass/partials/_forms.scss */
+.input-text:empty:not(:focus):before { content: attr(data-placeholder); color: #b5b5b5; }
 
-/* line 90, ../../../styles/sass/partials/_forms.scss */
+/* line 94, ../../../styles/sass/partials/_forms.scss */
 .di-menu button { height: 2rem; width: 2rem; border: 0; font-size: .9rem; padding: 0; margin: 0; }
-/* line 98, ../../../styles/sass/partials/_forms.scss */
+/* line 102, ../../../styles/sass/partials/_forms.scss */
 .di-menu button.button + .button { margin-left: 0; }
 
-/* line 105, ../../../styles/sass/partials/_forms.scss */
-.input-group .label { line-height: 30px; font-size: 16px; font-weight: 700; color: #545454; }
-/* line 109, ../../../styles/sass/partials/_forms.scss */
-.input-group.date { line-height: 30px; font-size: 16px; font-weight: 500; color: #b5b5b5; position: relative; display: table; border-collapse: separate; }
+/* line 108, ../../../styles/sass/partials/_forms.scss */
+.input-date { line-height: 30px; font-size: 16px; font-weight: 500; color: #b5b5b5; position: relative; border-collapse: separate; font-size: 1.5rem; line-height: 2rem; height: 2rem; }
 /* line 116, ../../../styles/sass/partials/_forms.scss */
-.input-group .form-control { line-height: 30px; font-size: 16px; font-weight: 500; color: #b5b5b5; background-color: #fff; background-image: none; color: #545454; border: 1px solid #ccc; border-right: 0; border-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; width: 100%; height: 34px; margin-bottom: 0; padding: 6px 12px; vertical-align: middle; box-shadow: none; transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s; display: table-cell; }
-/* line 141, ../../../styles/sass/partials/_forms.scss */
-.input-group .input-group-addon { line-height: 30px; font-size: 16px; font-weight: 500; color: #b5b5b5; text-align: center; width: 1%; white-space: nowrap; padding: 2px 12px 1px 8px; line-height: 1; color: #545454; border: 1px solid #ccc; border-left: 0; border-radius: 0; border-bottom-left-radius: 0; border-top-left-radius: 0; vertical-align: middle; display: table-cell; }
-/* line 162, ../../../styles/sass/partials/_forms.scss */
-.input-group .input-group-addon .icon { position: relative; top: 1px; display: inline-block; font-family: 'Glyphicons Halflings'; -webkit-font-smoothing: antialiased; font-style: normal; font-weight: normal; line-height: 1; cursor: pointer; width: 16px; height: 16px; }
-/* line 175, ../../../styles/sass/partials/_forms.scss */
-.input-group .input-group-addon .icon:before { font-size: 24px; }
+.input-date:not(:focus):before { position: absolute; font-family: "knewcons"; content: "\e00d"; right: .5rem; }
+/* line 123, ../../../styles/sass/partials/_forms.scss */
+.input-date input { border-radius: 0; box-shadow: none; }
+/* line 127, ../../../styles/sass/partials/_forms.scss */
+.input-date input:focus { border-radius: 0; box-shadow: none; outline: none; border: 1px solid #1abcc1; }
 
-/* line 181, ../../../styles/sass/partials/_forms.scss */
+/* line 138, ../../../styles/sass/partials/_forms.scss */
 .field-block { margin-bottom: 20px; }
-/* line 184, ../../../styles/sass/partials/_forms.scss */
+/* line 141, ../../../styles/sass/partials/_forms.scss */
 .field-block label { line-height: 30px; font-size: 16px; font-weight: 700; color: #545454; margin-top: 0; line-height: 1.3em; }
 
 /* line 2, ../../../styles/sass/partials/_modals.scss */
@@ -1036,22 +1332,40 @@ html { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: 
 */
 /* line 4, ../../../styles/sass/partials/_page-control-pagination.scss */
 .page-controls { border: 0 dashed #ccc; border-width: 1px 0; text-align: center; height: 34px; padding: 0 12px; }
-/* line 13, ../../../styles/sass/partials/_page-control-pagination.scss */
-.page-controls a.view-page { font-size: 16px; font-weight: 300; line-height: 18px; color: #1abcc1; text-decoration: none; width: 21px; height: 18px; text-align: center; display: inline-block; margin: 8px 1.5px 0; text-decoration: none; color: #aaa; }
+/* line 12, ../../../styles/sass/partials/_page-control-pagination.scss */
+.page-controls a.view-page { font-size: 16px; font-weight: 300; line-height: 18px; color: #1abcc1; text-decoration: none; width: 21px; height: 18px; text-align: center; display: inline-block; margin: 8px 1.5px 0; text-decoration: none; color: #b5b5b5; }
 /* line 93, ../../../styles/sass/modules/_typography.scss */
 .page-controls a.view-page:hover { text-decoration: underline; }
-/* line 24, ../../../styles/sass/partials/_page-control-pagination.scss */
+/* line 23, ../../../styles/sass/partials/_page-control-pagination.scss */
 .page-controls a.view-page:hover { -o-transition: background-color 0.4s ease-in-out, color 0.4s linear, opacity 0.4s linear; -webkit-transition: background-color 0.4s ease-in-out, color 0.4s linear, opacity 0.4s linear; -moz-transition: background-color 0.4s ease-in-out, color 0.4s linear, opacity 0.4s linear; transition: background-color 0.4s ease-in-out, color 0.4s linear, opacity 0.4s linear; color: #1abcc1; }
-/* line 30, ../../../styles/sass/partials/_page-control-pagination.scss */
+/* line 29, ../../../styles/sass/partials/_page-control-pagination.scss */
 .page-controls a.view-page.active { color: #fff; background: #454545; }
-/* line 37, ../../../styles/sass/partials/_page-control-pagination.scss */
+/* line 36, ../../../styles/sass/partials/_page-control-pagination.scss */
 .page-controls a.pager { -o-transition: opacity 0.2s linear; -webkit-transition: opacity 0.2s linear; -moz-transition: opacity 0.2s linear; transition: opacity 0.2s linear; line-height: 34px; font-weight: 300; font-size: 14px; display: block; text-decoration: none; color: #1abcc1; }
-/* line 47, ../../../styles/sass/partials/_page-control-pagination.scss */
+/* line 46, ../../../styles/sass/partials/_page-control-pagination.scss */
 .page-controls a.prev { float: left; }
-/* line 49, ../../../styles/sass/partials/_page-control-pagination.scss */
+/* line 48, ../../../styles/sass/partials/_page-control-pagination.scss */
 .page-controls a.next { float: right; }
-/* line 51, ../../../styles/sass/partials/_page-control-pagination.scss */
+/* line 50, ../../../styles/sass/partials/_page-control-pagination.scss */
 .page-controls a:hover { text-decoration: underline; }
+
+/* line 3, ../../../styles/sass/partials/_radio.scss */
+.inline { display: inline-block; }
+/* line 6, ../../../styles/sass/partials/_radio.scss */
+.inline + .inline { margin-left: 10px; }
+
+/* line 11, ../../../styles/sass/partials/_radio.scss */
+.radio { color: #ccc; position: relative; }
+/* line 15, ../../../styles/sass/partials/_radio.scss */
+.radio span { font-family: "museo-sans", sans-serif; font-size: 1rem; font-weight: 300; line-height: 1.3; color: #545454; position: relative; padding-left: 35px; padding-top: 4px; }
+/* line 21, ../../../styles/sass/partials/_radio.scss */
+.radio span:after { content: ''; width: 24px; height: 24px; border: 3px solid #ccc; position: absolute; left: 0; top: 1px; padding-top: 0; border-radius: 100%; -ms-border-radius: 100%; -moz-border-radius: 100%; -webkit-border-radius: 100%; box-sizing: border-box; -ms-box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; }
+/* line 43, ../../../styles/sass/partials/_radio.scss */
+.radio [type="radio"] { cursor: pointer; position: absolute; width: 100%; height: 100%; z-index: 1; opacity: 0; }
+/* line 51, ../../../styles/sass/partials/_radio.scss */
+.radio [type="radio"]:checked + span:after { -o-transition: border-color 0.1s ease-in-out, background-color 0.1s ease-in-out, background-image 0.1s ease-in-out, color 0.1s linear; -webkit-transition: border-color 0.1s ease-in-out, background-color 0.1s ease-in-out, background-image 0.1s ease-in-out, color 0.1s linear; -moz-transition: border-color 0.1s ease-in-out, background-color 0.1s ease-in-out, background-image 0.1s ease-in-out, color 0.1s linear; transition: border-color 0.1s ease-in-out, background-color 0.1s ease-in-out, background-image 0.1s ease-in-out, color 0.1s linear; color: #4ea565; border-color: #4ea565; }
+/* line 57, ../../../styles/sass/partials/_radio.scss */
+.radio [type="radio"]:checked + span:before { -o-transition: border-color 0.1s ease-in-out, background-color 0.1s ease-in-out, background-image 0.1s ease-in-out, color 0.1s linear; -webkit-transition: border-color 0.1s ease-in-out, background-color 0.1s ease-in-out, background-image 0.1s ease-in-out, color 0.1s linear; -moz-transition: border-color 0.1s ease-in-out, background-color 0.1s ease-in-out, background-image 0.1s ease-in-out, color 0.1s linear; transition: border-color 0.1s ease-in-out, background-color 0.1s ease-in-out, background-image 0.1s ease-in-out, color 0.1s linear; content: ''; width: 14px; height: 14px; position: absolute; background: #4ea565; left: 5px; top: 6px; border-radius: 100%; -ms-border-radius: 100%; -moz-border-radius: 100%; -webkit-border-radius: 100%; }
 
 /**
 *
@@ -1149,17 +1463,6 @@ button.group:hover:not(.disabled) { -o-transition: border-color 0.1s ease-in-out
 /* line 115, ../../../styles/sass/partials/_standard-button.scss */
 button.group + button { border-left: 1px solid #1abcc1; margin-left: -1px; }
 
-/* line 1, ../../../styles/sass/partials/_switch-button.scss */
-.switch-button { font-size: 12px; font-weight: 700; text-decoration: none; text-transform: uppercase; letter-spacing: 0.05em; color: #b5b5b5; line-height: 15px; color: #fff; cursor: pointer; width: 90px; height: 35px; line-height: 35px; border: 0; margin: 10px; text-align: center; text-transform: uppercase; text-decoration: none; }
-/* line 76, ../../../styles/sass/modules/_typography.scss */
-.switch-button:hover { color: #757575; text-decoration: none; }
-/* line 17, ../../../styles/sass/partials/_switch-button.scss */
-.switch-button.switch-on { background: #757575; border: 0; }
-/* line 22, ../../../styles/sass/partials/_switch-button.scss */
-.switch-button.switch-off { background: #f1f1f1; color: #ccc; }
-/* line 27, ../../../styles/sass/partials/_switch-button.scss */
-.switch-button:hover { background: #454545; color: #fff; }
-
 /* Neat 1.7.0 http://neat.bourbon.io Copyright 2012-2014 thoughtbot, inc. MIT License */
 /* line 2, ../../../bower_components/neat/app/assets/stylesheets/grid/_box-sizing.scss */
 html { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
@@ -1207,15 +1510,13 @@ table { width: 100%; border-collapse: collapse; }
 table::after { clear: both; content: ""; display: table; }
 /* line 10, ../../../styles/sass/partials/_tables.scss */
 table tr { height: 45px; }
-/* line 14, ../../../styles/sass/partials/_tables.scss */
-table tr:first-child { font-size: 45px; }
-/* line 17, ../../../styles/sass/partials/_tables.scss */
+/* line 15, ../../../styles/sass/partials/_tables.scss */
 table tr:first-child td { border-top: 0; }
-/* line 22, ../../../styles/sass/partials/_tables.scss */
-table td { font-size: 16px; font-weight: 300; letter-spacing: 0.015em; line-height: 19px; color: #545454; padding: 15px 50px 15px 0; border-top: 1px solid #ccc; color: #757575; font-size: 15px; line-height: 15px; }
-/* line 31, ../../../styles/sass/partials/_tables.scss */
+/* line 20, ../../../styles/sass/partials/_tables.scss */
+table td { font-size: 16px; font-weight: 300; letter-spacing: 0.015em; line-height: 19px; color: #545454; padding: 15px 50px 15px 0; border-top: 1px solid #ccc; color: #757575; }
+/* line 27, ../../../styles/sass/partials/_tables.scss */
 table td a { text-decoration: none; }
-/* line 35, ../../../styles/sass/partials/_tables.scss */
+/* line 31, ../../../styles/sass/partials/_tables.scss */
 table td.title { color: #454545; font-weight: 500; }
 
 /* Neat 1.7.0 http://neat.bourbon.io Copyright 2012-2014 thoughtbot, inc. MIT License */
@@ -1288,13 +1589,13 @@ html { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: 
 body { font-family: "museo-sans", sans-serif; font-size: 1rem; font-weight: 300; line-height: 1.3; color: #545454; color: #545454; background: #f1f1f1; margin: 0; }
 
 /* line 8, ../../../styles/sass/partials/_typography.scss */
-h1 { font-size: 3rem; font-weight: 300; line-height: 1.4em; color: #545454; }
+h1 { font-size: 1.75rem; font-weight: 300; line-height: 1.4em; color: #545454; }
 
 /* line 12, ../../../styles/sass/partials/_typography.scss */
-h2 { font-size: 28px; font-weight: 300; color: #545454; margin-top: 0; line-height: 1.3em; }
+h2 { font-size: 1.3125rem; font-weight: 300; color: #545454; margin-top: 0; line-height: 1.3em; }
 
 /* line 18, ../../../styles/sass/partials/_typography.scss */
-h3 { font-size: 28px; font-weight: 300; color: #545454; margin: 0; border-bottom: 1px solid #b5b5b5; padding-bottom: 0.625rem; }
+h3 { font-size: 1.3125rem; font-weight: 300; color: #545454; margin: 0; border-bottom: 1px solid #b5b5b5; padding-bottom: 0.625rem; }
 /* line 9, ../../../bower_components/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
 h3::after { clear: both; content: ""; display: table; }
 /* line 26, ../../../styles/sass/partials/_typography.scss */
@@ -1518,91 +1819,95 @@ html, body { margin: 0; padding: 0; background-color: #f1f1f1; }
 .sg-component p { margin: .5rem 0; }
 /* line 236, ../../../styles/sass/sg.scss */
 .sg-component h4 { margin: 10px 0; }
-/* line 240, ../../../styles/sass/sg.scss */
-.sg-component ul { list-style-type: none; }
-/* line 243, ../../../styles/sass/sg.scss */
-.sg-component ul li:before { content: "·"; font-size: 12px; }
 
 /*
 *
 * Grid samples
 * NEED TO THINK ABOUT THIS STUFF
 */
-/* line 257, ../../../styles/sass/sg.scss */
+/* line 248, ../../../styles/sass/sg.scss */
 .columns1of4 { float: left; display: block; margin-right: 0.84034%; width: 24.36975%; height: 45px; background-color: #f1f1f1; /* margin-right: $gutter; */ }
 /* line 85, ../../../bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
 .columns1of4:last-child { margin-right: 0; }
 
-/* line 264, ../../../styles/sass/sg.scss */
+/* line 255, ../../../styles/sass/sg.scss */
 .columns3of4 { float: left; display: block; margin-right: 0.84034%; width: 74.78992%; height: 45px; background-color: #f1f1f1; }
 /* line 85, ../../../bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
 .columns3of4:last-child { margin-right: 0; }
 
-/* line 270, ../../../styles/sass/sg.scss */
+/* line 261, ../../../styles/sass/sg.scss */
 .columns4of4 { float: left; display: block; margin-right: 0.84034%; width: 100%; height: 45px; margin-bottom: 10px; background-color: #f1f1f1; }
 /* line 85, ../../../bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
 .columns4of4:last-child { margin-right: 0; }
 
-/* line 277, ../../../styles/sass/sg.scss */
+/* line 268, ../../../styles/sass/sg.scss */
 .column-wrapper { float: left; display: block; margin-right: 0.84034%; width: 100%; background-color: #f1f1f1; padding: 40px; }
 /* line 85, ../../../bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
 .column-wrapper:last-child { margin-right: 0; }
-/* line 282, ../../../styles/sass/sg.scss */
+/* line 273, ../../../styles/sass/sg.scss */
 .column-wrapper .column-within { float: left; display: block; margin-right: 0.84034%; width: 100%; background-color: #ccc; padding: 20px; text-align: right; }
 /* line 85, ../../../bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
 .column-wrapper .column-within:last-child { margin-right: 0; }
 
 /*
 *
+* Forms, inputs, UI
+*
+*/
+/* line 287, ../../../styles/sass/sg.scss */
+.dropdown { margin: 10px auto; }
+
+/*
+*
 * Typography samples
 *
 */
-/* line 296, ../../../styles/sass/sg.scss */
+/* line 297, ../../../styles/sass/sg.scss */
 .text-sample { margin: 20px 0; }
 
-/* line 300, ../../../styles/sass/sg.scss */
+/* line 301, ../../../styles/sass/sg.scss */
 .standard-body-font { font-family: "museo-sans", sans-serif; font-size: 1rem; font-weight: 300; line-height: 1.3; color: #545454; }
 
-/* line 301, ../../../styles/sass/sg.scss */
-.headline-font { font-size: 3rem; font-weight: 300; line-height: 1.4em; color: #545454; }
-
 /* line 302, ../../../styles/sass/sg.scss */
-.subhead-font { font-size: 28px; font-weight: 300; color: #545454; }
+.headline-font { font-size: 1.75rem; font-weight: 300; line-height: 1.4em; color: #545454; }
 
 /* line 303, ../../../styles/sass/sg.scss */
-.head4-font { font-size: 18px; font-weight: 900; line-height: 1.3em; color: #545454; }
+.subhead-font { font-size: 1.3125rem; font-weight: 300; color: #545454; }
 
 /* line 304, ../../../styles/sass/sg.scss */
+.head4-font { font-size: 18px; font-weight: 900; line-height: 1.3em; color: #545454; }
+
+/* line 305, ../../../styles/sass/sg.scss */
 .action-link-font { font-size: 12px; font-weight: 700; text-decoration: none; text-transform: uppercase; letter-spacing: 0.05em; color: #b5b5b5; line-height: 15px; }
 /* line 76, ../../../styles/sass/modules/_typography.scss */
 .action-link-font:hover { color: #757575; text-decoration: none; }
 
-/* line 305, ../../../styles/sass/sg.scss */
+/* line 306, ../../../styles/sass/sg.scss */
 .std-link-font { font-size: 16px; font-weight: 300; line-height: 18px; color: #1abcc1; text-decoration: none; }
 /* line 93, ../../../styles/sass/modules/_typography.scss */
 .std-link-font:hover { text-decoration: underline; }
 
-/* line 306, ../../../styles/sass/sg.scss */
+/* line 307, ../../../styles/sass/sg.scss */
 .tab-font { /* Same as action-link, header-tab-font, diff line-height */ font-size: 12px; font-weight: 700; text-decoration: none; text-transform: uppercase; letter-spacing: 0.05em; color: #b5b5b5; line-height: 15px; line-height: 30px; }
 /* line 76, ../../../styles/sass/modules/_typography.scss */
 .tab-font:hover { color: #757575; text-decoration: none; }
 
-/* line 307, ../../../styles/sass/sg.scss */
+/* line 308, ../../../styles/sass/sg.scss */
 .pending-request-font { font-size: 12px; font-weight: 500; letter-spacing: 0.025em; color: #ee5723; }
 
-/* line 308, ../../../styles/sass/sg.scss */
+/* line 309, ../../../styles/sass/sg.scss */
 .sidebar-font { font-size: 14px; font-weight: 500; letter-spacing: 0.05em; color: #545454; line-height: 21px; }
 
-/* line 309, ../../../styles/sass/sg.scss */
+/* line 310, ../../../styles/sass/sg.scss */
 .result-paginator-font { font-size: 14px; font-weight: 500; letter-spacing: 0.015em; color: #545454; }
 
-/* line 310, ../../../styles/sass/sg.scss */
+/* line 311, ../../../styles/sass/sg.scss */
 .input-font { line-height: 30px; font-size: 16px; font-weight: 500; color: #b5b5b5; }
 
-/* line 311, ../../../styles/sass/sg.scss */
+/* line 312, ../../../styles/sass/sg.scss */
 .input-label-font { line-height: 30px; font-size: 16px; font-weight: 700; color: #545454; }
 
-/* line 312, ../../../styles/sass/sg.scss */
+/* line 313, ../../../styles/sass/sg.scss */
 .table-row-font { font-size: 16px; font-weight: 300; letter-spacing: 0.015em; line-height: 19px; color: #545454; }
 
 /*
@@ -1610,30 +1915,30 @@ html, body { margin: 0; padding: 0; background-color: #f1f1f1; }
 * Colors
 *
 */
-/* line 320, ../../../styles/sass/sg.scss */
+/* line 321, ../../../styles/sass/sg.scss */
 .color-row { float: left; display: block; margin-right: 0.84034%; width: 100%; }
 /* line 85, ../../../bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
 .color-row:last-child { margin-right: 0; }
 
-/* line 324, ../../../styles/sass/sg.scss */
+/* line 325, ../../../styles/sass/sg.scss */
 .color { text-align: center; }
-@media screen and (max-width: 320px) { /* line 324, ../../../styles/sass/sg.scss */
+@media screen and (max-width: 320px) { /* line 325, ../../../styles/sass/sg.scss */
   .color { float: left; display: block; margin-right: 0.84034%; width: 100%; }
   /* line 85, ../../../bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .color:last-child { margin-right: 0; } }
-@media screen and (max-width: 767px) and (min-width: 321px) { /* line 324, ../../../styles/sass/sg.scss */
+@media screen and (max-width: 767px) and (min-width: 321px) { /* line 325, ../../../styles/sass/sg.scss */
   .color { float: left; display: block; margin-right: 0.84034%; width: 49.57983%; }
   /* line 85, ../../../bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .color:last-child { margin-right: 0; } }
-@media screen and (min-width: 768px) { /* line 324, ../../../styles/sass/sg.scss */
+@media screen and (min-width: 768px) { /* line 325, ../../../styles/sass/sg.scss */
   .color { float: left; display: block; margin-right: 0.84034%; width: 24.36975%; }
   /* line 85, ../../../bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .color:last-child { margin-right: 0; } }
-/* line 331, ../../../styles/sass/sg.scss */
+/* line 332, ../../../styles/sass/sg.scss */
 .color .color-sample { height: 48px; line-height: 48px; font-size: 1.5em; }
-/* line 337, ../../../styles/sass/sg.scss */
+/* line 338, ../../../styles/sass/sg.scss */
 .color .color-sample.light { color: #fff; }
-/* line 342, ../../../styles/sass/sg.scss */
+/* line 343, ../../../styles/sass/sg.scss */
 .color .color-name { margin: .5rem 0; }
 
 /*
@@ -1641,16 +1946,16 @@ html, body { margin: 0; padding: 0; background-color: #f1f1f1; }
 * Knewcons
 *
 */
-/* line 353, ../../../styles/sass/sg.scss */
+/* line 354, ../../../styles/sass/sg.scss */
 .knewcons-display { float: left; display: block; margin-right: 0.84034%; width: 100%; }
 /* line 85, ../../../bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
 .knewcons-display:last-child { margin-right: 0; }
 
-/* line 357, ../../../styles/sass/sg.scss */
+/* line 358, ../../../styles/sass/sg.scss */
 .knewcon { float: left; margin: 10px; padding: 20px; border: 1px solid #ccc; border-radius: 5px; }
-/* line 364, ../../../styles/sass/sg.scss */
+/* line 365, ../../../styles/sass/sg.scss */
 .knewcon .knewcon-sample { text-align: center; }
-/* line 368, ../../../styles/sass/sg.scss */
+/* line 369, ../../../styles/sass/sg.scss */
 .knewcon .knewton-name { text-align: center; }
 
 /*
@@ -1658,11 +1963,11 @@ html, body { margin: 0; padding: 0; background-color: #f1f1f1; }
 * Code samples
 *
 */
-/* line 379, ../../../styles/sass/sg.scss */
+/* line 380, ../../../styles/sass/sg.scss */
 .snippet, .sample { background: #f1f1f1; margin: 1rem 0; padding: .5rem; font-family: monospace; overflow-x: auto; clear: both; }
-/* line 389, ../../../styles/sass/sg.scss */
+/* line 390, ../../../styles/sass/sg.scss */
 .snippet .snippet, .sample .snippet { margin: 0; padding: 0; }
-/* line 394, ../../../styles/sass/sg.scss */
+/* line 395, ../../../styles/sass/sg.scss */
 .snippet code, .sample code { padding: 0; }
 
 /*
@@ -1670,7 +1975,7 @@ html, body { margin: 0; padding: 0; background-color: #f1f1f1; }
 * UI Components
 *
 */
-/* line 405, ../../../styles/sass/sg.scss */
+/* line 406, ../../../styles/sass/sg.scss */
 .modal-body { padding: 80px 40px; }
 
 /*
