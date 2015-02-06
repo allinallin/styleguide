@@ -1,93 +1,117 @@
-@font-face { font-family: "knewcons"; src: url("../fonts/knewcons.eot"); src: url("../fonts/knewcons.eot?#iefix") format("embedded-opentype"), url("../fonts/knewcons.woff") format("woff"), url("../fonts/knewcons.ttf") format("truetype"), url("../fonts/knewcons.svg#knewcons") format("svg"); font-weight: normal; font-style: normal; }
-/* line 15, ../../../styles/sass/knewcons.scss */
-[data-icon]:before, [class^="icon-"]:before, [class*=" icon-"]:before { font-family: "knewcons" !important; font-style: normal !important; font-weight: normal !important; font-variant: normal !important; text-transform: none !important; speak: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+@font-face { font-family: "knewcons"; src: url('../fonts/knewcons.eot'); src: url('../fonts/knewcons.eot?#iefix') format("embedded-opentype"), url('../fonts/knewcons.woff') format("woff"), url('../fonts/knewcons.ttf') format("truetype"), url('../fonts/knewcons.svg#knewcons') format("svg"); font-weight: normal; font-style: normal; }
+/* line 13, ../../../styles/sass/knewcons.scss */
+[data-icon]:before, .knewcon, [class^="icon-"]:before, [class*=" icon-"]:before { font-family: "knewcons" !important; font-style: normal !important; font-weight: normal !important; font-variant: normal !important; text-transform: none !important; speak: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
-/* line 27, ../../../styles/sass/knewcons.scss */
+/* line 25, ../../../styles/sass/knewcons.scss */
 [data-icon]:before { content: attr(data-icon); }
 
-/* line 37, ../../../styles/sass/knewcons.scss */
+/* line 36, ../../../styles/sass/knewcons.scss */
 .icon-settings:before { content: "\e000"; }
 
-/* line 41, ../../../styles/sass/knewcons.scss */
+/* line 40, ../../../styles/sass/knewcons.scss */
 .icon-notify:before { content: "\e001"; }
 
-/* line 45, ../../../styles/sass/knewcons.scss */
+/* line 44, ../../../styles/sass/knewcons.scss */
 .icon-user:before { content: "\e002"; }
 
-/* line 49, ../../../styles/sass/knewcons.scss */
+/* line 48, ../../../styles/sass/knewcons.scss */
 .icon-search:before { content: "\e003"; }
 
-/* line 53, ../../../styles/sass/knewcons.scss */
+/* line 52, ../../../styles/sass/knewcons.scss */
 .icon-caret-right:before { content: "\e004"; }
 
-/* line 57, ../../../styles/sass/knewcons.scss */
+/* line 56, ../../../styles/sass/knewcons.scss */
 .icon-cancel:before { content: "\e005"; }
 
-/* line 61, ../../../styles/sass/knewcons.scss */
+/* line 60, ../../../styles/sass/knewcons.scss */
 .icon-check:before { content: "\e006"; }
 
-/* line 65, ../../../styles/sass/knewcons.scss */
+/* line 64, ../../../styles/sass/knewcons.scss */
 .icon-derived-topic:before { content: "\e007"; }
 
-/* line 69, ../../../styles/sass/knewcons.scss */
+/* line 68, ../../../styles/sass/knewcons.scss */
 .icon-target-topic:before { content: "\e00a"; }
 
-/* line 73, ../../../styles/sass/knewcons.scss */
+/* line 72, ../../../styles/sass/knewcons.scss */
 .icon-trashcan:before { content: "\e009"; }
 
-/* line 77, ../../../styles/sass/knewcons.scss */
+/* line 76, ../../../styles/sass/knewcons.scss */
 .icon-catalog:before { content: "\e008"; }
 
-/* line 81, ../../../styles/sass/knewcons.scss */
+/* line 80, ../../../styles/sass/knewcons.scss */
 .icon-share:before { content: "\e00b"; }
 
-/* line 85, ../../../styles/sass/knewcons.scss */
+/* line 84, ../../../styles/sass/knewcons.scss */
 .icon-calendar:before { content: "\e00d"; }
 
-/* line 89, ../../../styles/sass/knewcons.scss */
+/* line 88, ../../../styles/sass/knewcons.scss */
 .icon-target-hex-solid:before { content: "\e00c"; }
 
-/* line 93, ../../../styles/sass/knewcons.scss */
+/* line 92, ../../../styles/sass/knewcons.scss */
 .icon-target-hex-outlined:before { content: "\e00e"; }
 
-/* line 97, ../../../styles/sass/knewcons.scss */
+/* line 96, ../../../styles/sass/knewcons.scss */
 .icon-arrow:before { content: "\e00f"; }
 
-/* line 101, ../../../styles/sass/knewcons.scss */
+/* line 100, ../../../styles/sass/knewcons.scss */
 .icon-three-bars:before { content: "\e010"; }
 
-/* line 105, ../../../styles/sass/knewcons.scss */
+/* line 104, ../../../styles/sass/knewcons.scss */
 .icon-home:before { content: "\e011"; }
 
-/* line 109, ../../../styles/sass/knewcons.scss */
+/* line 108, ../../../styles/sass/knewcons.scss */
 .icon-pencil:before { content: "\e012"; }
 
-/* line 113, ../../../styles/sass/knewcons.scss */
+/* line 112, ../../../styles/sass/knewcons.scss */
 .icon-users:before { content: "\e013"; }
 
-/* line 117, ../../../styles/sass/knewcons.scss */
+/* line 116, ../../../styles/sass/knewcons.scss */
 .icon-user-add:before { content: "\e014"; }
 
-/* line 121, ../../../styles/sass/knewcons.scss */
+/* line 120, ../../../styles/sass/knewcons.scss */
 .icon-angle-right:before { content: "\e015"; }
 
-/* line 125, ../../../styles/sass/knewcons.scss */
+/* line 124, ../../../styles/sass/knewcons.scss */
 .icon-right-open-big:before { content: "\e016"; }
 
-/* line 129, ../../../styles/sass/knewcons.scss */
+/* line 128, ../../../styles/sass/knewcons.scss */
 .icon-letter-mail:before { content: "\e017"; }
 
-/* line 133, ../../../styles/sass/knewcons.scss */
+/* line 132, ../../../styles/sass/knewcons.scss */
 .icon-help:before { content: "\e018"; }
 
-/* line 137, ../../../styles/sass/knewcons.scss */
+/* line 136, ../../../styles/sass/knewcons.scss */
 .icon-primitive-dot:before { content: "\e019"; }
 
-/* line 141, ../../../styles/sass/knewcons.scss */
+/* line 140, ../../../styles/sass/knewcons.scss */
 .icon-design-graphic-tablet-streamline-tablet:before { content: "\e01a"; }
 
-/* line 145, ../../../styles/sass/knewcons.scss */
+/* line 144, ../../../styles/sass/knewcons.scss */
 .icon-graduation-cap:before { content: "\e01b"; }
 
-/* line 149, ../../../styles/sass/knewcons.scss */
+/* line 148, ../../../styles/sass/knewcons.scss */
 .icon-left-open-big:before { content: "\e01c"; }
+
+/* line 152, ../../../styles/sass/knewcons.scss */
+.icon-question:before { content: "\e01d"; }
+
+/* line 156, ../../../styles/sass/knewcons.scss */
+.icon-media-video:before { content: "\e01e"; }
+
+/* line 160, ../../../styles/sass/knewcons.scss */
+.icon-media-text:before { content: "\e01f"; }
+
+/* line 164, ../../../styles/sass/knewcons.scss */
+.icon-media-image:before { content: "\e020"; }
+
+/* line 168, ../../../styles/sass/knewcons.scss */
+.icon-history-sequence:before { content: "\e021"; }
+
+/* line 172, ../../../styles/sass/knewcons.scss */
+.icon-history-single:before { content: "\e022"; }
+
+/* line 176, ../../../styles/sass/knewcons.scss */
+.icon-history-current:before { content: "\e023"; }
+
+/* line 180, ../../../styles/sass/knewcons.scss */
+.icon-plus-circled:before { content: "\e024"; }
