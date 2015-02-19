@@ -1458,9 +1458,14 @@ html { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: 
 .loading:not(button):before { background-color: rgba(255, 255, 255, 0.8); }
 
 /* line 3, ../../../styles/sass/partials/_helpers.scss */
-.helper-icon-gray:after { display: inline-block; background: #b5b5b5; width: 0.875rem; height: 0.875rem; color: #fff; font-size: 0.625rem; line-height: 1rem; text-align: center; vertical-align: middle; content: '?'; font-weight: bold; margin-left: 0.25rem; }
-/* line 18, ../../../styles/sass/partials/_helpers.scss */
-.helper-icon-gray:not(a):after { cursor: default; }
+.helper-icon-gray { display: inline-block; background: #b5b5b5; width: 0.875rem; height: 0.875rem; color: #fff; font-size: 0.625rem; text-align: center; vertical-align: middle; font-weight: bold; margin-left: 0.25rem; cursor: default; line-height: 1rem; }
+/* line 17, ../../../styles/sass/partials/_helpers.scss */
+.helper-icon-gray:after { content: '?'; }
+
+/* line 22, ../../../styles/sass/partials/_helpers.scss */
+.helper-icon-gray.clickable, a.helper-icon-gray { cursor: pointer; }
+/* line 26, ../../../styles/sass/partials/_helpers.scss */
+.helper-icon-gray.clickable:hover, a.helper-icon-gray:hover { text-decoration: none; }
 
 /* line 4, ../../../bower_components/neat/app/assets/stylesheets/grid/_box-sizing.scss */
 html { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
@@ -1503,43 +1508,49 @@ html { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: 
 /* Text colors alias
 */
 /* line 4, ../../../styles/sass/partials/_standard-button.scss */
-button, .long, .medium, .short, .mini, button.group, .button, [type=submit] { font-size: 12px; font-weight: 700; text-decoration: none; text-transform: uppercase; letter-spacing: 0.05em; color: #b5b5b5; line-height: 15px; display: inline-block; cursor: pointer; margin: 0 5px; height: 2rem; line-height: 1.5rem; text-align: center; background: #1abcc1; color: #fff; border-style: solid; border-color: #1abcc1; border-width: 3px; padding: 0 0.75rem; }
+button, .long, .medium, .short, .mini, button.group, .button, [type=submit] { font-size: 12px; font-weight: 700; text-decoration: none; text-transform: uppercase; letter-spacing: 0.05em; color: #b5b5b5; line-height: 15px; display: inline-block; cursor: pointer; height: 2rem; line-height: 1.5rem; text-align: center; background: #1abcc1; color: #fff; border-style: solid; border-color: #1abcc1; border-width: 3px; padding: 0 0.75rem; }
 /* line 76, ../../../styles/sass/modules/_typography.scss */
 button:hover, .long:hover, .medium:hover, .short:hover, .mini:hover, button.group:hover, .button:hover, [type=submit]:hover { color: #757575; text-decoration: none; }
-/* line 22, ../../../styles/sass/partials/_standard-button.scss */
+/* line 21, ../../../styles/sass/partials/_standard-button.scss */
 button:focus, .long:focus, .medium:focus, .short:focus, .mini:focus, button.group:focus, .button:focus, [type=submit]:focus { outline: 0; }
-/* line 26, ../../../styles/sass/partials/_standard-button.scss */
+/* line 25, ../../../styles/sass/partials/_standard-button.scss */
 button:hover:not(:disabled):not(.disabled), .long:hover:not(:disabled):not(.disabled), .medium:hover:not(:disabled):not(.disabled), .short:hover:not(:disabled):not(.disabled), .mini:hover:not(:disabled):not(.disabled), button.group:hover:not(:disabled):not(.disabled), .button:hover:not(:disabled):not(.disabled), [type=submit]:hover:not(:disabled):not(.disabled) { -o-transition: border-color 0.1s ease-in-out, background-color 0.1s ease-in-out, background-image 0.1s ease-in-out, color 0.1s linear; -webkit-transition: border-color 0.1s ease-in-out, background-color 0.1s ease-in-out, background-image 0.1s ease-in-out, color 0.1s linear; -moz-transition: border-color 0.1s ease-in-out, background-color 0.1s ease-in-out, background-image 0.1s ease-in-out, color 0.1s linear; transition: border-color 0.1s ease-in-out, background-color 0.1s ease-in-out, background-image 0.1s ease-in-out, color 0.1s linear; color: #fff; background: #159fa3; border-color: #159fa3; }
-/* line 33, ../../../styles/sass/partials/_standard-button.scss */
+/* line 32, ../../../styles/sass/partials/_standard-button.scss */
 button.white-button, .white-button.long, .white-button.medium, .white-button.short, .white-button.mini, button.white-button.group, .button.white-button, [type=submit].white-button { background: #fff; color: #1abcc1; }
-/* line 37, ../../../styles/sass/partials/_standard-button.scss */
+/* line 36, ../../../styles/sass/partials/_standard-button.scss */
 button.white-button:hover:not(:disabled):not(.disabled), .white-button.long:hover:not(:disabled):not(.disabled), .white-button.medium:hover:not(:disabled):not(.disabled), .white-button.short:hover:not(:disabled):not(.disabled), .white-button.mini:hover:not(:disabled):not(.disabled), button.white-button.group:hover:not(:disabled):not(.disabled), .button.white-button:hover:not(:disabled):not(.disabled), [type=submit].white-button:hover:not(:disabled):not(.disabled) { -o-transition: border-color 0.1s ease-in-out, background-color 0.1s ease-in-out, background-image 0.1s ease-in-out, color 0.1s linear; -webkit-transition: border-color 0.1s ease-in-out, background-color 0.1s ease-in-out, background-image 0.1s ease-in-out, color 0.1s linear; -moz-transition: border-color 0.1s ease-in-out, background-color 0.1s ease-in-out, background-image 0.1s ease-in-out, color 0.1s linear; transition: border-color 0.1s ease-in-out, background-color 0.1s ease-in-out, background-image 0.1s ease-in-out, color 0.1s linear; background: #159fa3; color: #fff; border-color: #159fa3; }
-/* line 45, ../../../styles/sass/partials/_standard-button.scss */
-button + .button, .long + .button, .medium + .button, .short + .button, .mini + .button, button.group + .button, .button + .button, [type=submit] + .button { margin-left: 10px; }
+/* line 44, ../../../styles/sass/partials/_standard-button.scss */
+button + button, button + .button, .long + button, .medium + button, .short + button, .mini + button, button.group + button, .long + .button, .medium + .button, .short + .button, .mini + .button, button.group + .button, .button + button, .button + .button, [type=submit] + button, [type=submit] + .button { margin-left: 10px; }
 /* line 49, ../../../styles/sass/partials/_standard-button.scss */
 button:disabled, button.disabled, .long:disabled, .medium:disabled, .short:disabled, .mini:disabled, button.group:disabled, .disabled.long, .disabled.medium, .disabled.short, .disabled.mini, button.disabled.group, .button:disabled, .button.disabled, [type=submit]:disabled, [type=submit].disabled { color: #ccc; background: #f1f1f1; border-color: #f1f1f1; cursor: default; }
+/* line 57, ../../../styles/sass/partials/_standard-button.scss */
+button.text-button-gray, .text-button-gray.long, .text-button-gray.medium, .text-button-gray.short, .text-button-gray.mini, button.text-button-gray.group, .button.text-button-gray, [type=submit].text-button-gray { background: transparent; border: 0; color: #b5b5b5; }
+/* line 62, ../../../styles/sass/partials/_standard-button.scss */
+button.text-button-gray:disabled, .text-button-gray.long:disabled, .text-button-gray.medium:disabled, .text-button-gray.short:disabled, .text-button-gray.mini:disabled, button.text-button-gray.group:disabled, .button.text-button-gray:disabled, [type=submit].text-button-gray:disabled { color: #f1f1f1; }
+/* line 66, ../../../styles/sass/partials/_standard-button.scss */
+button.text-button-gray:hover:not(:disabled):not(.disabled), .text-button-gray.long:hover:not(:disabled):not(.disabled), .text-button-gray.medium:hover:not(:disabled):not(.disabled), .text-button-gray.short:hover:not(:disabled):not(.disabled), .text-button-gray.mini:hover:not(:disabled):not(.disabled), button.text-button-gray.group:hover:not(:disabled):not(.disabled), .button.text-button-gray:hover:not(:disabled):not(.disabled), [type=submit].text-button-gray:hover:not(:disabled):not(.disabled) { background: transparent; color: #757575; }
 
-/* line 59, ../../../styles/sass/partials/_standard-button.scss */
+/* line 74, ../../../styles/sass/partials/_standard-button.scss */
 .long { width: 190px; height: 2rem; padding: 0; }
 
-/* line 66, ../../../styles/sass/partials/_standard-button.scss */
+/* line 81, ../../../styles/sass/partials/_standard-button.scss */
 .medium { width: 140px; height: 2rem; padding: 0; }
 
-/* line 73, ../../../styles/sass/partials/_standard-button.scss */
+/* line 88, ../../../styles/sass/partials/_standard-button.scss */
 .short { width: 90px; height: 1.5rem; font-size: 9px; letter-spacing: 0.1em; line-height: initial; padding: .2em 1em; }
-/* line 82, ../../../styles/sass/partials/_standard-button.scss */
+/* line 97, ../../../styles/sass/partials/_standard-button.scss */
 .short.white-button { border: 1px solid #1abcc1; }
-/* line 85, ../../../styles/sass/partials/_standard-button.scss */
+/* line 100, ../../../styles/sass/partials/_standard-button.scss */
 .short.white-button:hover:not(:disabled):not(.disabled) { -o-transition: border-color 0.1s ease-in-out, background-color 0.1s ease-in-out, background-image 0.1s ease-in-out, color 0.1s linear; -webkit-transition: border-color 0.1s ease-in-out, background-color 0.1s ease-in-out, background-image 0.1s ease-in-out, color 0.1s linear; -moz-transition: border-color 0.1s ease-in-out, background-color 0.1s ease-in-out, background-image 0.1s ease-in-out, color 0.1s linear; transition: border-color 0.1s ease-in-out, background-color 0.1s ease-in-out, background-image 0.1s ease-in-out, color 0.1s linear; border-color: #159fa3; }
 
-/* line 92, ../../../styles/sass/partials/_standard-button.scss */
+/* line 107, ../../../styles/sass/partials/_standard-button.scss */
 .mini { width: 35px; height: 35px; padding: 0; }
 
-/* line 100, ../../../styles/sass/partials/_standard-button.scss */
-button.group { background: #fff; color: #1abcc1; border: 1px solid #1abcc1; min-width: 140px; height: 25px; padding: 0; margin: 0; font-size: 9px; line-height: 22px; letter-spacing: 0.1em; }
 /* line 115, ../../../styles/sass/partials/_standard-button.scss */
+button.group { background: #fff; color: #1abcc1; border: 1px solid #1abcc1; min-width: 140px; height: 25px; padding: 0; margin: 0; font-size: 9px; line-height: 22px; letter-spacing: 0.1em; }
+/* line 130, ../../../styles/sass/partials/_standard-button.scss */
 button.group:hover:not(:disabled):not(.disabled) { -o-transition: border-color 0.1s ease-in-out, background-color 0.1s ease-in-out, background-image 0.1s ease-in-out, color 0.1s linear; -webkit-transition: border-color 0.1s ease-in-out, background-color 0.1s ease-in-out, background-image 0.1s ease-in-out, color 0.1s linear; -moz-transition: border-color 0.1s ease-in-out, background-color 0.1s ease-in-out, background-image 0.1s ease-in-out, color 0.1s linear; transition: border-color 0.1s ease-in-out, background-color 0.1s ease-in-out, background-image 0.1s ease-in-out, color 0.1s linear; border-color: #159fa3; }
-/* line 120, ../../../styles/sass/partials/_standard-button.scss */
+/* line 135, ../../../styles/sass/partials/_standard-button.scss */
 button.group + button { border-left: 1px solid #1abcc1; margin-left: -1px; }
 
 /* line 4, ../../../bower_components/neat/app/assets/stylesheets/grid/_box-sizing.scss */
@@ -1583,19 +1594,32 @@ html { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: 
 /* Text colors alias
 */
 /* line 4, ../../../styles/sass/partials/_tables.scss */
-table { width: 100%; border-collapse: collapse; }
+.kn-table { width: 100%; border-collapse: collapse; }
 /* line 9, ../../../bower_components/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
-table::after { clear: both; content: ""; display: table; }
+.kn-table::after { clear: both; content: ""; display: table; }
 /* line 10, ../../../styles/sass/partials/_tables.scss */
-table tr { height: 45px; }
+.kn-table tr { height: 2.8125rem; }
 /* line 15, ../../../styles/sass/partials/_tables.scss */
-table tr:first-child td { border-top: 0; }
+.kn-table tr:first-child td { border-top: 0; }
 /* line 20, ../../../styles/sass/partials/_tables.scss */
-table td { font-size: 16px; font-weight: 300; letter-spacing: 0.015em; line-height: 19px; color: #545454; padding: 15px 50px 15px 0; border-top: 1px solid #ccc; color: #757575; }
+.kn-table td { font-size: 16px; font-weight: 300; letter-spacing: 0.015em; line-height: 19px; color: #545454; padding: 0.9375rem 3.125rem 0.9375rem 0; border-top: 0.0625rem solid #ccc; color: #757575; }
 /* line 27, ../../../styles/sass/partials/_tables.scss */
-table td a { text-decoration: none; }
+.kn-table td a { text-decoration: none; }
 /* line 31, ../../../styles/sass/partials/_tables.scss */
-table td.title { color: #454545; font-weight: 500; }
+.kn-table td.title { color: #454545; font-weight: 500; }
+
+/* line 38, ../../../styles/sass/partials/_tables.scss */
+.kn-stripe-table { width: 100%; border-collapse: collapse; }
+/* line 42, ../../../styles/sass/partials/_tables.scss */
+.kn-stripe-table th, .kn-stripe-table td { font-size: 16px; font-weight: 300; letter-spacing: 0.015em; line-height: 19px; color: #545454; height: 2.8125rem; color: #454545; text-align: center; padding: 0 0.9375rem; }
+/* line 50, ../../../styles/sass/partials/_tables.scss */
+.kn-stripe-table th:first-child, .kn-stripe-table td:first-child { text-align: left; }
+/* line 55, ../../../styles/sass/partials/_tables.scss */
+.kn-stripe-table th { font-weight: 700; }
+/* line 59, ../../../styles/sass/partials/_tables.scss */
+.kn-stripe-table td { border-top: 1px solid #b5b5b5; }
+/* line 63, ../../../styles/sass/partials/_tables.scss */
+.kn-stripe-table tr:nth-child(even) { background-color: #edf8f9; }
 
 /* line 4, ../../../bower_components/neat/app/assets/stylesheets/grid/_box-sizing.scss */
 html { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
